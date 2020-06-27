@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">     
+  <div class="container">         
+    <a class="navbar-brand" href="#"><i class="fas fa-adjust"></i>Navbar</a>         
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">           
+      <span class="toggler"><i class="fas fa-bars text-white"></i></span>         
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">           
+      <ul class="navbar-nav ml-auto">             
+        <%= render links %>           
+      </ul>         
+    </div>     
+  </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid mb-0">
+  <div class="container">
+    <div class="update">
+      <p class="py-1 px-2">
+        <span class="soon mx-2 p-1">SOON</span>TextChat: Instant text messaging coming out soon <i class="fas fa-chevron-right"></i>
+      </p>
+    </div>
+    <h1 class="display-4 text-white">The right way to chat with developers, globally</h1>
+    <p class="lead mb-5">
+      Have an idea to share? Need help with a coding challenge? 
+      Come chat with your fellow developers.
+      Do it automatically and around the globe with DevTime. No appointment needed!
+    </p>
+    <div class="buttons">
+      <%= render btnStart %>
+      <a href="#" class="btn btn-primary disabled">TextChat coming soon!!!</a>
+    </div>
+  </div>
+</div>
+<div class="text-right">
+  <img src="<%= image_path('Workathome.png') %>" alt="" class="header-image d-none d-md-block mt-3">
+</div>
